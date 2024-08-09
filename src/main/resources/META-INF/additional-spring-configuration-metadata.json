@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "allowed_origin",
+    "type": "java.lang.String",
+    "description": "A description for 'allowed_origin'"
+  },
+  {
+    "name": "new_user_avatar_url",
+    "type": "java.lang.String",
+    "description": "A description for 'new_user_avatar_url'"
+  }
+]}
