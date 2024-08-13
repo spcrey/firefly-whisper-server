@@ -3,7 +3,7 @@ import os
 import requests
 
 BASE_URL = "http://localhost:9000"
-# BASE_URL = "http://120.26.13.9:9000"
+BASE_URL = "http://120.26.13.9:9000"
 
 import argparse
 

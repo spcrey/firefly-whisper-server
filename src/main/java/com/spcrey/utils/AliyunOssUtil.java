@@ -17,7 +17,7 @@ public class AliyunOssUtil {
 
     private static final String ENDPOINT = "https://oss-cn-beijing.aliyuncs.com";
 
-    private static final String BUCKET_NAME = "ffid";
+    private static final String BUCKET_NAME = "firefly-whisper";
 
     public static String uploadFile(String objectName, InputStream in) throws Exception {
         EnvironmentVariableCredentialsProvider credentialsProvider = CredentialsProviderFactory.newEnvironmentVariableCredentialsProvider();
@@ -52,7 +52,7 @@ public class AliyunOssUtil {
     }
 
     public static void main(String[] args) throws Exception {
-        String filepath = "/home/crey/firefly-in-dream/server/src/main/resources/img/orange.jpg";
+        String filepath = "/home/crey/firefly-whisper-server/src/main/resources/image/orange.jpg";
         String filename = UUID.randomUUID().toString() + filepath.substring(filepath.lastIndexOf("."));
         try (InputStream inputStream = new FileInputStream(filepath)) {   
             String url = uploadFile(filename, inputStream);

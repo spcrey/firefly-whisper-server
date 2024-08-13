@@ -3,7 +3,7 @@ import requests
 import argparse
 
 BASE_URL = "http://localhost:9000"
-# BASE_URL = "http://120.26.13.9:9000"
+BASE_URL = "http://120.26.13.9:9000"
 
 def get_args():
     parser = argparse.ArgumentParser()
